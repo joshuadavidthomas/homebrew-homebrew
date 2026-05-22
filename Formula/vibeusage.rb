@@ -5,21 +5,21 @@
 class Vibeusage < Formula
   desc "Track usage quotas across AI coding tool providers"
   homepage "https://github.com/joshuadavidthomas/vibeusage"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.8.0/vibeusage_darwin_amd64.tar.gz"
-      sha256 "c2fccdb4b0dd8a2447ff1b1e4cee2f061e133540b38b57523853db8cf8354085"
+      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.9.0/vibeusage_darwin_amd64.tar.gz"
+      sha256 "e62ae8a55df219bbd5add60064499cc92df5f48ff9f6bdb808d3758b5379dcc4"
 
       define_method(:install) do
         bin.install "vibeusage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.8.0/vibeusage_darwin_arm64.tar.gz"
-      sha256 "0e7f2c579c940b6a946b531db1ca8d9cf052313cda011e2a2de7c27b7d5ef75c"
+      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.9.0/vibeusage_darwin_arm64.tar.gz"
+      sha256 "40525cba4487df871737646d2313afa92a90eba22403b2de9624ddce5912430d"
 
       define_method(:install) do
         bin.install "vibeusage"
@@ -29,15 +29,15 @@ class Vibeusage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.8.0/vibeusage_linux_amd64.tar.gz"
-      sha256 "db6c8727d70d6f0206943219bb922973af090fb60efc08ff7daf50060b1f5a64"
+      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.9.0/vibeusage_linux_amd64.tar.gz"
+      sha256 "14904a479b316c3b4446960ed0b98c567c0d49591be9327b23e409102fb93430"
       define_method(:install) do
         bin.install "vibeusage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.8.0/vibeusage_linux_arm64.tar.gz"
-      sha256 "67deee7923267d6ef4e64de75b5a12602b5a0ca3e087afc4ac98330b5cfd345e"
+      url "https://github.com/joshuadavidthomas/vibeusage/releases/download/v0.9.0/vibeusage_linux_arm64.tar.gz"
+      sha256 "42c7c93ad4957f8b6d08a65f0eb5b9f5120789a34a3cc0ea5db4e9dcd792a663"
       define_method(:install) do
         bin.install "vibeusage"
       end
