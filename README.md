@@ -10,12 +10,13 @@ Add the repo as a source for homebrew:
 brew tap joshuadavidthomas/homebrew
 ```
 
-Then use homebrew to install any of the tools listed below, e.g.:
+Then install any formula listed below, for example:
 
 ```bash
-brew install vibeusage
+brew install django-language-server
 ```
 
 ## Formulae
 
+- [django-language-server](https://github.com/joshuadavidthomas/django-language-server)
 - [vibeusage](https://github.com/joshuadavidthomas/vibeusage)
