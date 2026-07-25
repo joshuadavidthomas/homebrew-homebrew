@@ -13,11 +13,13 @@ jobs:
     runs-on: macos-14
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - name: Add the tap
+        run: brew tap joshuadavidthomas/homebrew
       - name: Check formula style
         run: brew style Formula/django-language-server.rb
       - name: Audit formula
-        run: brew audit --formula Formula/django-language-server.rb
+        run: brew audit --formula joshuadavidthomas/homebrew/django-language-server
       - name: Install formula
-        run: brew install --formula Formula/django-language-server.rb
+        run: brew install joshuadavidthomas/homebrew/django-language-server
       - name: Test formula
-        run: brew test Formula/django-language-server.rb
+        run: brew test joshuadavidthomas/homebrew/django-language-server
