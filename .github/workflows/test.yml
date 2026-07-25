@@ -16,7 +16,7 @@ jobs:
       - name: Check formula style
         run: brew style Formula/django-language-server.rb
       - name: Audit formula
-        run: brew audit --new-formula Formula/django-language-server.rb
+        run: brew audit --formula Formula/django-language-server.rb
       - name: Install formula
         run: brew install --formula Formula/django-language-server.rb
       - name: Test formula
